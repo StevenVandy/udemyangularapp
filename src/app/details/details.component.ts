@@ -19,8 +19,9 @@ export class DetailsComponent implements OnInit {
 
    displayDetails() {
     this.displayDetailsBoolean = !this.displayDetailsBoolean;
-    this.displayCounter = this.displayCounter + 1;
-    this.detailClicks.push(this.displayCounter);
+    this.detailClicks.push(new Date())
+    // this.displayCounter = this.displayCounter + 1;
+    // this.detailClicks.push(this.displayCounter);
     //console.log(this.detailClicks)
   }
 

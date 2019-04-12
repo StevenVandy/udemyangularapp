@@ -12,6 +12,6 @@ details works!
 
 <p *ngIf="displayDetailsBoolean"> {{ details }}</p>
 
-<div *ngFor="let click of detailClicks"
-[ngStyle]="{backgroundColor: click > 4 ? 'blue' : 'transparent'}"
-[ngClass]="{'white-text': click > 4}"> {{ click }}</div>
+<div *ngFor="let click of detailClicks; let i = index"
+[ngStyle]="{backgroundColor: i > 3 ? 'blue' : 'transparent'}"
+[ngClass]="{'white-text': i > 3}"> {{ click }}</div>
