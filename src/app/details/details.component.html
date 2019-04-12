@@ -1,0 +1,17 @@
+<p>
+details works!
+</p>
+
+<hr>
+
+<button class="btn btn-primary"
+(click)="displayDetails()">
+  Display Details
+</button>
+
+
+<p *ngIf="displayDetailsBoolean"> {{ details }}</p>
+
+<div *ngFor="let click of detailClicks"
+[ngStyle]="{backgroundColor: click > 4 ? 'blue' : 'transparent'}"
+[ngClass]="{'white-text': click > 4}"> {{ click }}</div>
